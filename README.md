@@ -2,4 +2,4 @@
 
 ## Running
 
-`npm i`, `npm start:server`, and then `npm:start`.
+`npm i`, `npm run build`, `npm run start:server`, and then `npm run start`.

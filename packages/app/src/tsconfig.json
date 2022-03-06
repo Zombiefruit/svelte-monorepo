@@ -1,6 +1,22 @@
 {
   "extends": "../../../tsconfig.base.json",
-  "compilerOptions": { "outDir": "../dist", "composite": true },
+  "compilerOptions": {
+    "outDir": "../dist",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    /**
+     * Typecheck JS in `.svelte` and `.js` files by default.
+     * Disable checkJs if you'd like to use dynamic types in JS.
+     * Note that setting allowJs false does not prevent the use
+     * of JS in `.svelte` files.
+     */
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "isolatedModules": true
+  },
   "references": [{ "path": "../../server/src" }],
   "include": ["vite.config.ts"]
 }

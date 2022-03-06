@@ -15,7 +15,12 @@
     "allowJs": true,
     "checkJs": true,
     "strict": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "esModuleInterop": true,
+    "types": ["svelte"]
   },
   "references": [{ "path": "../../server/src" }],
   "include": ["vite.config.ts"]

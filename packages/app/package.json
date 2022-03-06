@@ -1,6 +1,7 @@
 {
   "name": "@svelte-monorepo/app",
   "type": "module",
+  "version": "0.0.0",
   "scripts": {
     "start": "vite --config src/vite.config.ts serve src",
     "build": "vite build",

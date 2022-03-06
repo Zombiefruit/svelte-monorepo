@@ -1,0 +1,16 @@
+{
+  "name": "@svelte-monorepo/server",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "browser": "dist/universal/index.js",
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "ws": "^8.5.0"
+  },
+  "scripts": {
+    "start:server": "node --loader ts-node/esm src/server.ts",
+    "start": "node --enable-source-maps ./dist/server.js",
+    "build": "tsc ./node/index.ts --outDir dist"
+  }
+}
